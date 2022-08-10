@@ -1,0 +1,3 @@
+run_bash
+run_rstudio
+build_docker
