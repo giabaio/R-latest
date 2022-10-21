@@ -1,3 +1,5 @@
+# Needs this to increase the R default time-out time (INLA is a big package so may break installation without this)
+options(timeout=600)
 install.packages("tidyverse")
 install.packages("rmarkdown")
 install.packages('rjags')
@@ -7,4 +9,14 @@ install.packages("INLA",repos=c(getOption("repos"),INLA="https://inla.r-inla-dow
 remotes::install_github("giabaio/bmhe_utils")
 remotes::install_github("giabaio/survHE",ref="devel")
 remotes::install_github("giabaio/survHE",ref="inla")
-remotes::install_github("giabaio/BCEA",ref="dev")
+remotes::install_github("giabaio/BCEA",ref="dev") 
+
+## xaringan-related 
+remotes::install_github("mitchelloharawild/icons")
+remotes::install_github("daqana/tikzDevice")
+install.packages("knitr")
+remotes::install_github("rstudio/htmltools")
+remotes::install_github("haozhu233/kableExtra")
+remotes::install_github("gadenbuie/xaringanExtra")
+remotes::install_github("giabaio/slides")
+remotes::install_github("ropensci/RefManageR")
